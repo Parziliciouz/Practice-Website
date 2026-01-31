@@ -1,0 +1,4 @@
+.gemini/
+.agent/
+*.png
+# index.html should NOT be here if you want to host it!
