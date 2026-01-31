@@ -1,19 +1,19 @@
 /* CSS Variables & Design Tokens */
 :root {
-    --primary: #FFEB00;
-    /* Giallo Modena / Yellow */
-    --primary-alt: #D40000;
-    /* Rosso Corsa / Red */
-    --background: #D40000;
-    --bg-soft: rgba(0, 0, 0, 0.2);
-    --text-main: #FFFFFF;
-    --text-muted: rgba(255, 255, 255, 0.7);
+    --primary: #C1121F;
+    /* Deep Crimson Red */
+    --primary-alt: #000000;
+    /* Sophisticated Black */
+    --background: #FFFFFF;
+    --bg-soft: #F7F7F7;
+    --text-main: #0B0B0B;
+    --text-muted: #555555;
     --accent: #000000;
-    --border: rgba(255, 255, 255, 0.1);
-    --glass-bg: rgba(0, 0, 0, 0.4);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.5);
+    --border: rgba(0, 0, 0, 0.08);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
     --radius-lg: 20px;
     --radius-md: 12px;
     --radius-sm: 8px;
@@ -216,7 +216,7 @@ section {
     position: relative;
     overflow: hidden;
     padding-top: 5rem;
-    background: url('ferrari_cyber_bg_1769857290016.png') no-repeat center center;
+    background: url('cybersecurity_bg_1769857030774.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -227,7 +227,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, var(--background) 20%, rgba(212, 0, 0, 0.4) 100%);
+    background: linear-gradient(90deg, #ffffff 40%, rgba(255, 255, 255, 0.7) 100%);
     z-index: 0;
 }
 
@@ -280,25 +280,24 @@ section {
 
 .btn-primary {
     background: var(--primary);
-    color: #000;
-    box-shadow: 0 4px 14px rgba(255, 235, 0, 0.3);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(193, 18, 31, 0.2);
 }
 
 .btn-primary:hover {
-    background: #fff;
+    background: #000;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    background: #fff;
+    color: var(--text-main);
     border: 1px solid var(--border);
-    backdrop-filter: blur(5px);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--bg-soft);
     transform: translateY(-3px);
 }
 
@@ -384,19 +383,17 @@ section {
 }
 
 .stat-card {
-    background: var(--glass-bg);
+    background: #fff;
     padding: 2rem;
     border-radius: var(--radius-md);
     border: 1px solid var(--border);
     text-align: center;
     transition: var(--transition);
-    backdrop-filter: blur(10px);
 }
 
 .stat-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary);
-    box-shadow: 0 0 20px rgba(255, 235, 0, 0.1);
 }
 
 .stat-number {
@@ -423,12 +420,11 @@ section {
 }
 
 .skill-category {
-    background: var(--glass-bg);
+    background: #fff;
     padding: 2.5rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border);
     transition: var(--transition);
-    backdrop-filter: blur(10px);
 }
 
 .skill-category:hover {
@@ -647,8 +643,7 @@ section {
     padding: 1.2rem;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border);
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.5);
     font-family: inherit;
     font-size: 1rem;
     transition: var(--transition);
@@ -658,7 +653,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary);
-    background: rgba(0, 0, 0, 0.5);
+    background: #fff;
 }
 
 /* Footer */
